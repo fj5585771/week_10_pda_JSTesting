@@ -16,4 +16,11 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('2')
   })
 
+  it('should allow operators to give result of previous operation', () => {
+    running_total = element(by.css('#running_total'))
+    element(by.css('#number2')).click();
+    operators = element(by.css('.operator'))
+    expect(running_total.getAttribute('value')).to.eventually.equal('2')
+  })
+
 });
