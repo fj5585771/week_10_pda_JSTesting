@@ -52,9 +52,18 @@ describe('calculator', function () {
   })
 
   it('can clear the operation in effect', function(){
-    calculator.runningTotal = 0;
+    calculator.runningTotal = 5;
     calculator.clearClick();
     assert.strictEqual(calculator.runningTotal, 0);
   })
+
+  // it('can revert infinity value to zero', function(){
+  //   calculator.previousTotal = 8;
+  //   calculator.previousOperator = '/';
+  //   calculator.divide(0);
+  //   calculator.operatorClick('=');
+  //   calculator.runningTotal = 2;
+
+  // })
 
 });

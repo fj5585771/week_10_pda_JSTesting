@@ -79,4 +79,10 @@ Calculator.prototype.clearClick = function(){
   this.runningTotal = 0;
 }
 
+// Calculator.prototype.revertInfinity = function(){
+//   if (this.runningTotal === Infinity) {
+//     this.runningTotal = 0;
+//   }
+// }
+
 if(typeof module != 'undefined'){ module.exports = Calculator}
