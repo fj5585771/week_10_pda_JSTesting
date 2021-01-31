@@ -59,13 +59,13 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('Infinity');
   })
 
-  it('should show 0 instead of Infinity', () => {
-    running_total = element(by.css('#running_total'))
-    element(by.css('#number1')).click();
-    element(by.css('#operator_divide')).click();
-    element(by.css('#number0')).click();
-    element(by.css('#operator_equals')).click();
-    expect(running_total.getAttribute('value')).to.eventually.equal('0');
-  })
+  // it('should show 0 instead of Infinity', () => {
+  //   running_total = element(by.css('#running_total'))
+  //   element(by.css('#number1')).click();
+  //   element(by.css('#operator_divide')).click();
+  //   element(by.css('#number0')).click();
+  //   element(by.css('#operator_equals')).click();
+  //   expect(running_total.getAttribute('value')).to.eventually.equal('0');
+  // })
 
 });
