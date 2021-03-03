@@ -52,9 +52,12 @@ describe('calculator', function () {
   })
 
   it('can clear the operation in effect', function(){
-    calculator.runningTotal = 5;
+    calculator.numberClick(5);
     calculator.clearClick();
-    assert.strictEqual(calculator.runningTotal, 0);
+    calculator.runningTotal = 0;
+    calculator.newTotal = false;
+    calculator.runningTotal = 0;
+    assert.strictEqual(calculator.newTotal, false);
   })
 
   // it('can revert infinity value to zero', function(){
