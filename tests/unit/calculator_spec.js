@@ -54,7 +54,6 @@ describe('calculator', function () {
   it('can clear the operation in effect', function(){
     calculator.numberClick(5);
     calculator.clearClick();
-    calculator.runningTotal = 0;
     calculator.newTotal = false;
     calculator.runningTotal = 0;
     assert.strictEqual(calculator.newTotal, false);
